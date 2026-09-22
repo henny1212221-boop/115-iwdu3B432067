@@ -1,107 +1,36 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人自我介紹</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: #000000;
-            color: #ffffff;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", sans-serif;
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .profile-card {
-            background-color: #121212;
-            border: 1px solid #222222;
-            border-radius: 16px;
-            padding: 40px;
-            max-width: 500px;
-            width: 100%;
-            text-align: center;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
-        }
-
-        .avatar-placeholder {
-            width: 140px;
-            height: 140px;
-            background-color: #808080;
-            border-radius: 50%;
-            margin: 0 auto 24px auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #ffffff;
-            font-size: 14px;
-            border: 3px solid #0000cd;
-        }
-
-        .name {
-            font-size: 2rem;
-            margin-bottom: 12px;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
-
-        .highlight {
-            color: #0000cd;
-        }
-
-        .bio {
-            font-size: 1rem;
-            color: #dddddd;
-            margin-bottom: 24px;
-            text-align: left;
-            padding: 0 10px;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #0000cd;
-            color: #ffffff;
-            padding: 10px 24px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: opacity 0.2s ease;
-        }
-
-        .btn:hover {
-            opacity: 0.85;
-        }
-    </style>
+    <title>首頁 | 黃敏茹 個人網站</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="profile-card">
-        <!-- 大頭貼灰色圓形佔位區塊 (#808080) -->
-        <div class="avatar-placeholder">
-            頭像位置
-        </div>
+    <article class="profile-card">
+        <!-- 目錄導覽：自我介紹 與 聯絡我 -->
+        <nav class="main-nav" aria-label="網站主要目錄">
+            <a href="about.html" class="nav-link">自我介紹</a>
+            <a href="contact.html" class="nav-link">聯絡我</a>
+        </nav>
 
-        <!-- 姓名標題 -->
-        <h1 class="name">你的姓名 / <span class="highlight">Name</span></h1>
+        <!-- 首頁標題與內容 -->
+        <header>
+            <h1 class="page-title">首頁</h1>
+        </header>
 
-        <!-- 自我介紹內容 -->
-        <p class="bio">
-            你好！我是 <span class="highlight">你的姓名</span>。這是一段自我介紹文字範例。深色背景能帶來沈穩且具科技感的視覺風格，搭配強調色可凸顯個人特色與重要資訊。你可以在此編輯你的個人經歷、專業技能與興趣愛好。
-        </p>
+        <main>
+            <p style="color: var(--color-text-secondary); margin-bottom: 24px;">
+                歡迎光臨我的個人網站，請點擊上方目錄查看自我介紹或進行聯絡。
+            </p>
+        </main>
 
-        <!-- 強調色按鈕 -->
-        <a href="#contact" class="btn">聯絡我</a>
-    </div>
+        <footer class="card-footer">
+            <p>&copy; 2026 黃敏茹. All rights reserved.</p>
+        </footer>
+    </article>
 
 </body>
 </html>
